@@ -41,7 +41,7 @@ const featureExtractor = ml5.featureExtractor('MobileNet', modelLoaded);
 
 // When the model is loaded
 function modelLoaded() {
-    featureExtractor.load("model/model.json")
+    featureExtractor.load("Model/model.json")
     console.log('Model Loaded!');
 }
 
