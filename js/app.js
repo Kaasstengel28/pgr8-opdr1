@@ -57,7 +57,7 @@ function videoReady() {
 // Get a prediction for that image
 function classifyImage() {
     classifier.classify(document.getElementById('webcam'), (err, result) => {
-        console.log(result); // Should output 'dog'
+        console.log(result);
         label.innerText = result[0].label;
         if(result[0].label == "man") {
             speak("dat is een hele man")
