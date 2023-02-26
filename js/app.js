@@ -59,7 +59,7 @@ function classifyImage() {
     classifier.classify(document.getElementById('webcam'), (err, result) => {
         console.log(result);
         label.innerText = result[0].label;
-        if(result[0].label == "man") {
+        if(result[0].label == 'man') {
             speak("dat is een hele man")
             points += 1;
             document.getElementById("points").innerHTML = `aantal herkende mensen: ${points}`;
